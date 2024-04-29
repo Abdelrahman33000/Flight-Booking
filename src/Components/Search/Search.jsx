@@ -5,16 +5,17 @@ import Aos from "aos";
 import { useEffect } from "react";
 
 const Search = () => {
-
-  useEffect(()=>{
-    Aos.init()
-  } ,[])
+  useEffect(() => {
+    Aos.init();
+  }, []);
 
   return (
     <div className="search container section">
-
-      <div data-aos="fade-up" data-aos-duration="2500"  className="sectionContainer grid">
-
+      <div
+        data-aos="fade-up"
+        data-aos-duration="2500"
+        className="sectionContainer grid"
+      >
         <div className="btns flex">
           <div className="singleBtn">
             <span>Economy</span>
@@ -27,24 +28,31 @@ const Search = () => {
           <div className="singleBtn">
             <span>First Class</span>
           </div>
-
-
         </div>
 
-        <div data-aos="fade-up" data-aos-duration="2500" className="searchInputs flex" >
+        <div
+          data-aos="fade-up"
+          data-aos-duration="2500"
+          className="searchInputs flex"
+        >
           <div className="singleInput flex">
             <div className="iconDiv">
-<TiLocationOutline  className="icon"/>
+              <TiLocationOutline className="icon" />
             </div>
             <div className="text">
               <h4>Location</h4>
-              <input type="text" name="" id="" placeholder="where do you want to go ? " />
+              <input
+                type="text"
+                name=""
+                id=""
+                placeholder="where do you want to go ? "
+              />
             </div>
           </div>
-{/* ================= */}
+          {/* ================= */}
           <div className="singleInput flex">
             <div className="iconDiv">
-<FaRegUserCircle  className="icon"/>
+              <FaRegUserCircle className="icon" />
             </div>
             <div className="text">
               <h4>Travelers</h4>
@@ -52,10 +60,10 @@ const Search = () => {
             </div>
           </div>
 
-{/* ================== */}
+          {/* ================== */}
           <div className="singleInput flex">
             <div className="iconDiv">
-<RxCalendar  className="icon"/>
+              <RxCalendar className="icon" />
             </div>
             <div className="text">
               <h4>Check IN</h4>
@@ -63,10 +71,10 @@ const Search = () => {
             </div>
           </div>
 
-{/* ==================== */}
+          {/* ==================== */}
           <div className="singleInput flex">
             <div className="iconDiv">
-<RxCalendar  className="icon"/>
+              <RxCalendar className="icon" />
             </div>
             <div className="text">
               <h4>Check Out</h4>
@@ -74,17 +82,11 @@ const Search = () => {
             </div>
           </div>
 
-<button className="btn btnBlock flex" >Search Flight</button>
-
+          <button className="btn btnBlock flex">Search Flight</button>
         </div>
-
-        
       </div>
-
-
-
     </div>
-  )
-}
+  );
+};
 
-export default Search
+export default Search;

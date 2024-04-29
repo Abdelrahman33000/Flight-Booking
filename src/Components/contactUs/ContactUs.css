@@ -1,30 +1,25 @@
-.btn5{
-    transition: .5s;
-    background-color: #ff8d03;
-    text-decoration: none;
+.btn5 {
+  transition: 0.5s;
+  background-color: #ff8d03;
+  text-decoration: none;
 }
 
-.btn5:hover{
-background-color: #000;
-color: #fff;
-
+.btn5:hover {
+  background-color: #000;
+  color: #fff;
 }
-.inp{
-    border: none;
-    border-bottom: 3px solid black;
-    width: 100%;
-    background-color: rgb(185, 185, 183);
-    outline: none;
-    height: 35px;
-    margin: 10px auto;
-    border-radius: 20px;
-    padding: 5px 15px;
-    
-
+.inp {
+  border: none;
+  border-bottom: 3px solid black;
+  width: 100%;
+  background-color: rgb(185, 185, 183);
+  outline: none;
+  height: 35px;
+  margin: 10px auto;
+  border-radius: 20px;
+  padding: 5px 15px;
 }
 
-.as{
-    grid-template-columns: repeat(2,1fr);
+.as {
+  grid-template-columns: repeat(2, 1fr);
 }
-
-

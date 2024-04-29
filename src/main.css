@@ -62,7 +62,8 @@ li {
   background-color: aqua;
 }
 
-img, video {
+img,
+video {
   width: 100%;
   height: auto;
 }
@@ -96,7 +97,8 @@ h2 {
   width: 100%;
   z-index: 1000;
 }
-.NavBar .NavBarOne, .NavBar .navBarTwo {
+.NavBar .NavBarOne,
+.NavBar .navBarTwo {
   justify-content: space-between;
   padding: 1rem;
   width: 100%;
@@ -286,7 +288,12 @@ h2 {
   outline: none;
   background: transparent;
 }
-.search .sectionContainer .searchInputs .singleInput .text input::-moz-placeholder {
+.search
+  .sectionContainer
+  .searchInputs
+  .singleInput
+  .text
+  input::-moz-placeholder {
   font-size: 12px;
   opacity: 0.5;
 }
@@ -415,21 +422,43 @@ h2 {
   gap: 1rem;
   margin: auto;
 }
-.travelers .sectionContainer .travelersContainer .singleTravelers .destinationImages, .travelers .sectionContainer .travelersContainer .singleTravelers .travelerImage, .travelers .sectionContainer .travelersContainer .singleTravelers .travelerName {
+.travelers
+  .sectionContainer
+  .travelersContainer
+  .singleTravelers
+  .destinationImages,
+.travelers
+  .sectionContainer
+  .travelersContainer
+  .singleTravelers
+  .travelerImage,
+.travelers
+  .sectionContainer
+  .travelersContainer
+  .singleTravelers
+  .travelerName {
   position: absolute;
 }
-.travelers .sectionContainer .travelersContainer .singleTravelers .destinationImages {
+.travelers
+  .sectionContainer
+  .travelersContainer
+  .singleTravelers
+  .destinationImages {
   width: 100%;
   height: 100%;
   inset: 0;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
-.travelers .sectionContainer .travelersContainer .singleTravelers .travelerImage {
+.travelers
+  .sectionContainer
+  .travelersContainer
+  .singleTravelers
+  .travelerImage {
   width: 50px;
   height: 50px;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-radius: 50%;
   bottom: 30px;
   left: 40%;
@@ -449,7 +478,11 @@ h2 {
     transform: translateY(0px);
   }
 }
-.travelers .sectionContainer .travelersContainer .singleTravelers .travelerName {
+.travelers
+  .sectionContainer
+  .travelersContainer
+  .singleTravelers
+  .travelerName {
   margin: auto;
   width: 100%;
   bottom: -100%;
@@ -460,12 +493,22 @@ h2 {
   transition: 0.4s ease-in-out;
   animation: animatedBorder 2.5s infinite;
 }
-.travelers .sectionContainer .travelersContainer .singleTravelers .travelerName span {
+.travelers
+  .sectionContainer
+  .travelersContainer
+  .singleTravelers
+  .travelerName
+  span {
   display: block;
   color: #000;
   font-weight: 700;
 }
-.travelers .sectionContainer .travelersContainer .singleTravelers .travelerName p {
+.travelers
+  .sectionContainer
+  .travelersContainer
+  .singleTravelers
+  .travelerName
+  p {
   font-style: italic;
   color: #000;
   opacity: 0.5;
@@ -481,11 +524,19 @@ h2 {
     border-radius: 0rem;
   }
 }
-.travelers .sectionContainer .travelersContainer .singleTravelers:hover .travelerName {
+.travelers
+  .sectionContainer
+  .travelersContainer
+  .singleTravelers:hover
+  .travelerName {
   bottom: 0;
   transition: 1s ease-in-out;
 }
-.travelers .sectionContainer .travelersContainer .singleTravelers:hover .travelerImage {
+.travelers
+  .sectionContainer
+  .travelersContainer
+  .singleTravelers:hover
+  .travelerImage {
   bottom: 105px;
   transition: 1s ease-in-out;
 }
@@ -715,7 +766,8 @@ h2 {
   .NavBar .navBarTwo .Menu {
     flex-direction: row;
   }
-  .NavBar .navBarTwo .btnOne, .NavBar .navBarTwo .toggleIcon {
+  .NavBar .navBarTwo .btnOne,
+  .NavBar .navBarTwo .toggleIcon {
     display: none;
     gap: 0.5rem;
   }
@@ -820,7 +872,8 @@ h2 {
     width: 70%;
     margin: auto;
   }
-  .NavBar .NavBarOne, .NavBar .navBarTwo {
+  .NavBar .NavBarOne,
+  .NavBar .navBarTwo {
     padding: 1.5rem 5rem;
   }
   .home .mainText {
@@ -837,7 +890,7 @@ h2 {
     width: 100%;
     height: 100%;
     -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
     border-radius: 15rem;
   }
   .home .homeImages .plane {
@@ -870,4 +923,4 @@ h2 {
 }
 html {
   scroll-behavior: smooth;
-}/*# sourceMappingURL=main.css.map */
+} /*# sourceMappingURL=main.css.map */
