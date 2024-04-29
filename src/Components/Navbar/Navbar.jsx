@@ -1,9 +1,11 @@
 //Imported Icons ===========>
-import { SiConsul } from "react-icons/si";
-import { BsPhoneVibrate } from "react-icons/bs";
+import { BsPhoneVibrate, BsYoutube } from "react-icons/bs";
 import { AiOutlineGlobal } from "react-icons/ai";
-import { CgMenuGridR } from "react-icons/cg";
-import { useEffect, useState } from "react";
+import { CgClose, CgMenuGridR } from "react-icons/cg";
+import {  useState } from "react";
+import { BiSearch } from "react-icons/bi";
+import {Subscribers} from '../index';
+import {Link} from 'react-router-dom';
 
 //Imported Image ===========>
 
@@ -20,18 +22,7 @@ const Navbar = () => {
 
 
 
-// useEffect(() =>{
-//   const addBgColor =() =>{
-//     if(window.scrollY >= 10){
 
-//       setActive('NavBarTwo  navBar_with_Bg')
-//     }else{
-//       setActive('NavBarTwo')
-
-//     }
-//   }
-
-// },[])
 
   window.addEventListener('scroll', ()=>{
     if(scrollY>=10){
@@ -43,17 +34,29 @@ const Navbar = () => {
     }
   })
 
+  const[search , setSearch]=useState(false)
 
   return (
     <div className="NavBar flex">
       <div className="NavBarOne flex">
        <div>
-         <SiConsul className="icon" />
+         <BiSearch className="icon"  onClick={() => {
+           setSearch(true)
+         }
+         }/>
+          {search &&  <div style={{position:"fixed", right:"0" ,backgroundColor:"#0e8cec" , left:0, top:0 , bottom:0,zIndex:5,}}>
+            <CgClose style={{margin:"200px auto " , display:"flex",fontSize:"30px" , color:"red" , cursor:"pointer"}} onClick={() => {
+              setSearch(false);
+            }
+            }/>
+            <input type="search" name="" id=""  style={{margin:"200px auto " , display:"flex",width:"90%", borderRadius:"15px" , outline:"none" ,background:"transparent" , height:"40px"}}/></div>}
        </div>
 
        <div className="none flex">
-<li className="flex"> <BsPhoneVibrate className="icon"/> Support</li>
-<li className="flex"> <AiOutlineGlobal className="icon" /> Languages</li>
+<li className="flex"> <BsPhoneVibrate className="icon"/>  +201011815928</li>
+<Link to={'https://www.youtube.com/c/EngAbdelrahmanAbdelwahab'}>
+<li className="flex"> <BsYoutube className="icon" /> Subscribe </li>
+</Link>
        </div>
 
        <div className="atb flex">

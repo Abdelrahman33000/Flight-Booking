@@ -4,8 +4,19 @@ import ContactUs from "./Components/contactUs/ContactUs"
 import Config from "./config"
 // import Config from "./config"
 import './main.css'
+import { BiUpArrowCircle } from "react-icons/bi"
 
 const App = () => {
+
+  window.addEventListener('scroll', ()=>{
+    if(scrollY>=10){
+      document.getElementById('up').style.display ="flex"
+    }
+    else{
+      document.getElementById('up').style.display ="none"
+    }
+  })
+
   return (
     <div style={{backgroundColor:"#1ca0f9" ,overflow:"hidden"}}>
       <BrowserRouter >
@@ -22,6 +33,8 @@ const App = () => {
       <Footer /> 
       <Config />
       </BrowserRouter>
+      <a href="#" id="up"  ><BiUpArrowCircle style={{fontSize:"30px", position:"fixed" ,bottom:"20px", right:"30px" }} /></a>
+
     </div>
   )
 }

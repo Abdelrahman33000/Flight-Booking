@@ -4,6 +4,7 @@ import { FaLinkedin } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 import { useEffect } from "react";
 import Aos from "aos";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   useEffect(()=>{
@@ -19,11 +20,12 @@ const Footer = () => {
           </div>
           <p> Your Mind Should be Stronger Than Your Flyings , Fly!</p>
           <div data-aos="fade-down" data-aos-duration="2000" className="socialIcon flex">
-  <ImFacebook  className="icon" />
-  <FaYoutube  className="icon"/>
-  <FaLinkedin  className="icon"/>
+<Link to={'https://www.facebook.com/Abdo55655'}> <ImFacebook  className="icon" /></Link>  
+<Link to={'https://www.youtube.com/c/EngAbdelrahmanAbdelwahab'}> <FaYoutube  className="icon"/> </Link> 
+
+<Link to={'https://www.linkedin.com/in/abdelrahman-abdelwahab-7034b3208/'}> <FaLinkedin  className="icon"/> </Link>  
   <MdEmail  className="icon"/>
-          </div>
+   </div>
         </div>
 
         <div  className="footerLinks">
